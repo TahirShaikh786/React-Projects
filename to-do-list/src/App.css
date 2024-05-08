@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+  background-color: #2c2c2c;
+  margin: 0;
+  padding: 1rem;
+  height: 100vh;
+}
+.App h1{
+  color: #fff;
+  text-shadow: 2px 2px 4px gray;
+}
+.App h1:after{
+  content: "";
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 7%;
+  border: 2px solid #fff;
+  margin-top: 1%;
+  margin-left: 46.5%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform ease-in-out 0.6s;
+}
+.App h1:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+form{
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  padding: 1rem;
+}
+form input{
+  height: 40px;
+  flex-basis: 80%;
+  border-radius: 1rem 0rem 0rem 1rem;
+  box-shadow: -1px 2px 4px #fff;
+  border: none;
+  font-size: 1rem;
+  padding-left: 1rem;
+  font-style: italic;
+}
+form button{
+  flex-basis: 20%;
+  background-color: #2c2c2c;
+  color: #fff;
+  border-radius: 0rem 1rem 1rem 0rem;
+  font-size: 1rem;
+  box-shadow: 1px 2px 4px #fff;
+}
+form input:focus{
+  outline: none;
+}
+.outerDiv{
+  width: 1170px;
+  margin: auto;
+}
+.outerDiv ul{
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  list-style: none;
+}
+.outerDiv ul li{
+  padding: 10px;
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 20px;
+  background-color: #2c2c2c;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 4px #fff;
+  border-radius: 1rem;
+  text-align: left;
+  display: flex;
+  user-select: none;
+  justify-content: space-between;
+}
+.innerDiv{
+  width: 10%;
+  gap: 20px;
+  cursor: pointer;
+  display: flex;
+}
+.innerDiv span:first-child,.innerDiv span:last-child{
+  transition: all ease-in-out 0.3s;
+}
+.innerDiv span:first-child:hover{
+  color: green;
+}
+.innerDiv span:last-child:hover{
+  color: red;
+}
+.completetodo{
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: line-through;
+  background-color: lightgreen !important;
+}
