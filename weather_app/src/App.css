@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-image: url("../public/bg.jpg");
+}
+
+.innerContainer {
+  width: 30%;
+  height: auto;
+  color: #fff;
+  display: flex;
+  padding: 1.5rem;
+  font-style: italic;
+  align-items: center;
+  border-radius: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 20px 20px 10px #000000a7;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.innerContainer h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin: 1.2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  font-style: italic;
+  border: none;
+  border-radius: 1rem;
+  border-bottom: 2px solid #fff;
+  padding: 0.8rem 1.2rem;
+  box-shadow: 2px 2px 4px #fff;
+  background-color: transparent;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+}
+
+input[type="text"]::placeholder {
+  color: #fff;
+}
+
+form button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: #2c2c2c;
+  transform: translateY(0px);
+  box-shadow: 4px 4px 5px #2c2c2c;
+  transition: all linear 0.5s;
+}
+
+form button:hover {
+  transform: translateY(-4px);
+  box-shadow: 10px 10px 20px #2c2c2c;
+}
+
+.weatherInfo {
+  width: 100%;
+  height: 25vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0rem;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-radius: 3rem;
+  background-color: #ddeff59b;
+}
+
+.posi-absolute{
+  position: absolute;
+}
+
+.disp-hidden{
+  display: none;
+}
+
+.weatherInfo h3 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.weatherInfo span{
+  padding: 0 1rem;
+  border-radius: 1rem;
+  background-color: greenyellow;
+}
+
+.weatherInfo img{
+  width: 15%;
+  height: 40%;
+  mix-blend-mode: multiply;
+}
+
+.weatherInfo p{
+  text-transform: uppercase;
+}
